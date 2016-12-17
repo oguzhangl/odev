@@ -4,7 +4,7 @@ void main()
 {
 	setlocale(LC_ALL,"turkish");
 int a,carp=1,top=0;
-cout<<"istenilen üst sýnýrý giriniz"<<endl;	cin>>a;
+cout<<"istenilen Ã¼st sÃ½nÃ½rÃ½ giriniz"<<endl;	cin>>a;
 for (int i=1;i<=a;i++)
 {
 	carp=1;
@@ -13,5 +13,6 @@ for (int i=1;i<=a;i++)
 	top+=carp;
 }
 cout<<top<<endl;
+cout<<"eline saÄŸlÄ±k abi"<<endl;
 system("pause");
 }
