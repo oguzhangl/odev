@@ -1,0 +1,100 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function kaydet()
+{
+ 	var ısım=document.getElementById('name').value
+ 	var sifre=document.getElementById('pass').value
+	alert("başarılı bir şekilde kayıt oldunuz.")	
+ 	
+ 	
+	var x=document.createElement("INPUT")
+	x.setAttribute("type", "button")
+	x.setAttribute("value", "giriş")
+	x.setAttribute("onclick", "giris()")
+	document.body.appendChild(x)	
+
+}
+	
+function giris()
+{
+	var ısım2=document.getElementById('name2').value
+	var pass2=document.getElementById('pass2').value
+	var ısım=document.getElementById('name').value
+	var pass=document.getElementById('pass').value
+	if (ısım2==ısım && pass2==pass)
+		{
+			var z=document.createElement("INPUT")
+			z.setAttribute("type", "button")
+			z.setAttribute("value", "kod için tıklanıyınız")
+			z.setAttribute("onclick", "site()")
+			document.body.appendChild(z)
+
+		}	
+	else
+		{
+			alert("kullanıcı adı veya şifre yanlış lütfen tekrar giriş yapınız")
+		
+		}
+}
+function site()
+{
+	window.location='https://www.youtube.com/watch?v=jstRUFnTn28';
+}
+
+</script>
+	<title>deneme</title>
+	<style type="text/css">
+		body{	
+			background: AntiqueWhite;
+		}
+		h1{
+			color: blue;
+
+			width: 200px;
+			font-size: 50px;
+			align-self: center;
+		}
+		p{
+			color: red;
+			font-size: 20px;
+		}
+	</style>
+	
+</head>
+<body>
+<h1>bedava 100TL steam cüzdan kodu</h1>
+<h4>tek yapmanız gereken kayıt olup giriş yapmanız</h4>
+<p>kayıt</p>
+<table border="2">
+<tr>
+<td>kullanıcı adı</td>
+<td>şifre</td>
+</tr>
+<tr>
+	<td><input id="name" type="text" name="name"></td>
+	<td><input id="pass" type="password" name="pass"></td>
+</tr>
+</table>
+<br>
+<button  onclick="kaydet()">kayıt ol</button>
+<script type="text/javascript">
+	var ısım=document.getElementById('name').value
+ 	var sifre=document.getElementById('pass').value
+</script>
+<br>
+<p>giriş</p>
+<table border="2">
+<tr>
+<td>kullanıcı adı</td>
+<td>şifre</td>
+</tr>
+<tr>
+	<td><input id=name2 type="text" name="name2"></td>
+	<td><input id="pass2" type="password" name="pass"></td>
+</tr>
+</table>
+<br>
+</body>
+</html>
